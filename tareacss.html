@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Responsive Layout</title>
+<style>
+
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+  
+}
+h1 {
+  margin-bottom: 30px;
+  text-align: center;
+  
+}
+
+.cont1 {
+  border: 1px solid black;
+  float: left;
+}
+
+#mbx1 {
+  width: 140px;
+  background-color: rgb(235, 205, 71);
+  float: right;
+}
+
+#text1 {
+  text-align: center;
+  padding: 5px;
+  border: 1px solid rgb(0, 0, 0);
+  
+}
+#text11 {
+  background-color: rgb(251, 246, 195);
+  padding: 35px 10px 10px 10px;
+  border: 1px solid black;
+  margin: 0px;
+}
+.cont2 {
+  border: 1px solid black;
+  float: left;
+}
+#mbx2 {
+  width: 140px;
+  background-color: rgba(110, 3, 21, 0.801);
+  float: right;
+}
+
+#text2 {
+  text-align: center;
+  color: rgb(135, 193, 226);
+  padding: 5px;
+  border: 1px solid black;
+  
+}
+#text22 {
+  background-color: rgb(248, 209, 182);
+  padding: 35px 10px 10px 10px;
+  border: 1px solid black;
+  margin: 0px;
+}
+.cont3 {
+  border: 1px solid black;
+  float: left;
+}
+#mbx3 {
+  width: 140px;
+  background-color: rgb(118, 163, 236);
+  float: right;
+}
+
+#text3 {
+  text-align: center;
+  color: rgb(17, 0, 255);
+  padding: 5px;
+  border: 1px solid black;
+  
+}
+#text33 {
+  background-color: rgb(204, 213, 250);
+  padding: 35px 10px 10px 10px;
+  border: 1px solid black;
+  margin: 0px;
+}
+
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+}
+
+/********** Desktop only **********/
+
+@media screen and (min-width: 992px) {
+  .cont1 {
+    
+    width: 31.33%;
+    margin: 1%;
+  }
+  .cont2 {
+    width: 31.33%;
+    margin: 1%;
+  }
+  .cont3 {
+    width: 31.33%;
+    margin: 1%;
+  }
+}
+
+/********** tablet devices only **********/
+
+@media screen and (max-width: 991px) {
+  .cont1 {
+    width: 48%;
+    margin: 1%;
+  }
+  .cont2 {
+    width: 48%;
+    margin: 1%;
+  }
+  .cont3 {
+    width: 98%;
+    margin: 1%;
+  }
+}
+
+/********** mobile devices only **********/
+
+@media screen and (max-width: 767px) {
+  .cont1 {
+    width: 98%;
+    margin: 1%;
+  }
+  .cont2 {
+    width: 98%;
+    margin: 1%;
+  }
+  .cont3 {
+    width: 98%;
+    margin: 1%;
+  }
+}
+
+</style>
+</head>
+<body>
+ 
+    <h1>Our Menu</h1>
+
+<div class="row">
+  
+  <div class="cont1">
+    <div id="mbx1">
+      <div id="text1">Chicken</div>
+    </div>
+    
+    <p id="text11">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione soluta deserunt officia beatae dolor numquam repellendus magnam sed eaque ipsam iure quam distinctio eum exercitationem, velit cupiditate, ipsum modi tempora.</p>
+  </div>
+    
+  <div class="cont2">
+    <div id="mbx2">
+      <div id="text2">Beef</div>
+      
+    </div>
+    <p id="text22">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur laboriosam accusamus non sed, iste ex minima facilis adipisci asperiores nemo voluptatum aspernatur repudiandae, iusto dolorem enim temporibus facere rem inventore.</p>
+  </div>
+
+  <div class="cont3">
+    <div id="mbx3">
+      <div id="text3">Sushi</div>
+      
+    </div>
+    <p id="text33">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, autem? Nobis nulla porro voluptatem consectetur laudantium, ad, nihil molestiae voluptates tempore optio magnam ipsum illo in? Repellendus, facere! Veniam, praesentium?</p>
+  </div>
+
+</div>
+
+</body>
+</html>
